@@ -1,0 +1,180 @@
+/******************************************************************************
+BLOG SPECIFIC STYLES START HERE 
+******************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+END OF: KODE KITCHEN STYLES START HERE 
+******************************************************************************/
+
+@media (max-width: 1024px) { 
+	#canvas {
+	    padding:40px;
+    	width: auto;
+	}
+	#primaryContent {
+		width: 65%;
+	}
+	#secondaryContent {
+	    border-width: 5px;
+    	width: 18%;
+	}	
+	img {
+		margin: 10px 0;
+		height: auto;
+    	max-width: 97%;
+	}
+}
+@media (max-width: 800px) { 
+	.main-menu {
+   		height: auto;
+		text-align: center;
+	}
+	.main-menu ul {
+		background:url(images/nav-bg.gif) repeat-x scroll left bottom;
+	}
+	.main-menu ul li {
+    	display: inline;
+    	float: none;
+    }
+    .main-menu ul li {
+    	display: inline-block;
+    }
+    .main-menu li a {
+    	display: inline-block;
+    }
+    .main-menu ul ul {
+    	text-align: left;
+    }
+	#primaryContent {
+		float: none;
+		margin-right: 0;
+		width: auto;
+	}
+	#secondaryContent {
+   		 clear: both;
+   		 width: auto;
+	}
+	#secondaryContent > ul > li {
+  		 float: left;	
+    	 width: 33%;
+    }	 
+	#secondaryContent ul ul {
+   		 float: left;
+    	 width: auto;
+	}
+	#secondaryContent li {
+    	border-bottom: none;
+    } 
+    #secondaryContent li li{
+    	border-bottom: 1px dotted #D1BFA6;
+    }
+	li.postWrapper, div.postWrapper {
+		margin-bottom: 30px;
+	}
+	.pagination-older,
+	.pagination-newer {
+		margin-bottom: 20px;
+	}	
+
+}
+
+
+@media screen and (max-width: 480px) {
+	#canvas {
+		padding:10px;
+	}
+	.main-menu {
+    	height: auto;
+    }	
+	#primaryContent {
+		margin:0;
+	}
+	#secondaryContent {
+    	width: 89%;
+    }
+    #secondaryContent > ul > li {
+    	float: none;
+    	width: auto;
+	}
+	#secondaryContent ul ul {
+   		 float: none;
+	}
+	#site-title a,
+	#site-description  {
+		background:none;
+		font-size:40px;
+    	line-height: 1em;
+	}
+	#site-description  {
+		font-size:25px;
+		margin:10px;
+	}
+	img {
+		margin:0;
+		padding:0;
+		max-width:100%;
+		height:auto;	
+	}
+}
+
+/* 
+ * print styles
+ * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ */
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
